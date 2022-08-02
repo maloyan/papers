@@ -1,5 +1,6 @@
 site_name: Papers ideas and drafts
 
 theme:
+  name: 'material'
   palette:
-    primary: red
+      primary: red
