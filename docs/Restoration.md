@@ -18,7 +18,6 @@ Overview
 --------------------------------------------
 - [A Survey on Leveraging Pre-trained Generative Adversarial Networks for Image Editing and Restoration](https://arxiv.org/pdf/2207.10309.pdf)
 - [Resolution-robust Large Mask Inpainting with Fourier Convolutions](https://www.youtube.com/watch?v=Lg97gWXsiQ4)
-- [MMediting tool](https://github.com/open-mmlab/mmediting)
 
 ### Image-Super-Resolution
 
@@ -31,6 +30,7 @@ Overview
 - [TTSR](https://github.com/open-mmlab/mmediting/tree/master/configs/restorers/ttsr/README.md) (CVPR'2020)
 - [GLEAN](https://github.com/open-mmlab/mmediting/tree/master/configs/restorers/glean/README.md) (CVPR'2021)
 - [LIIF](https://github.com/open-mmlab/mmediting/tree/master/configs/restorers/liif/README.md) (CVPR'2021)
+- [Diverse Similarity Encoder for Deep GAN Inversion](https://arxiv.org/pdf/2108.10201.pdf)
 
 ### Generation
 
@@ -43,6 +43,10 @@ Overview
 - [Deep Generalized Unfolding Networks for Image Restoration](https://openaccess.thecvf.com/content/CVPR2022/papers/Mou_Deep_Generalized_Unfolding_Networks_for_Image_Restoration_CVPR_2022_paper.pdf)
 - [All-In-One Image Restoration for Unknown Corruption](https://openaccess.thecvf.com/content/CVPR2022/papers/Li_All-in-One_Image_Restoration_for_Unknown_Corruption_CVPR_2022_paper.pdf)
 
+### Tools
+- [MMediting tool](https://github.com/open-mmlab/mmediting)
+- [GFPGAN](https://github.com/TencentARC/GFPGAN)
+- [StyleGAN XL](https://github.com/autonomousvision/stylegan_xl)
 
 Methods
 --------------------------------------------
