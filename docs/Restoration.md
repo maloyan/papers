@@ -17,23 +17,24 @@ Overview
 --------------------------------------------
 - [A Survey on Leveraging Pre-trained Generative Adversarial Networks for Image Editing and Restoration](https://arxiv.org/pdf/2207.10309.pdf)
 - [Resolution-robust Large Mask Inpainting with Fourier Convolutions](https://www.youtube.com/watch?v=Lg97gWXsiQ4)
+- [MMediting tool](https://github.com/open-mmlab/mmediting)
 
 ## Image-Super-Resolution
 
-- [SRCNN](configs/restorers/srcnn/README.md) (TPAMI'2015)
-- [SRResNet&SRGAN](configs/restorers/srresnet_srgan/README.md) (CVPR'2016)
-- [EDSR](configs/restorers/edsr/README.md) (CVPR'2017)
-- [ESRGAN](configs/restorers/esrgan/README.md) (ECCV'2018)
-- [RDN](configs/restorers/rdn/README.md) (CVPR'2018)
-- [DIC](configs/restorers/dic/README.md) (CVPR'2020)
-- [TTSR](configs/restorers/ttsr/README.md) (CVPR'2020)
-- [GLEAN](configs/restorers/glean/README.md) (CVPR'2021)
-- [LIIF](configs/restorers/liif/README.md) (CVPR'2021)
+- [SRCNN](https://github.com/open-mmlab/mmediting/tree/master/configs/restorers/srcnn/README.md) (TPAMI'2015)
+- [SRResNet&SRGAN](https://github.com/open-mmlab/mmediting/tree/master/configs/restorers/srresnet_srgan/README.md) (CVPR'2016)
+- [EDSR](https://github.com/open-mmlab/mmediting/tree/master/configs/restorers/edsr/README.md) (CVPR'2017)
+- [ESRGAN](https://github.com/open-mmlab/mmediting/tree/master/configs/restorers/esrgan/README.md) (ECCV'2018)
+- [RDN](https://github.com/open-mmlab/mmediting/tree/master/configs/restorers/rdn/README.md) (CVPR'2018)
+- [DIC](https://github.com/open-mmlab/mmediting/tree/master/configs/restorers/dic/README.md) (CVPR'2020)
+- [TTSR](https://github.com/open-mmlab/mmediting/tree/master/configs/restorers/ttsr/README.md) (CVPR'2020)
+- [GLEAN](https://github.com/open-mmlab/mmediting/tree/master/configs/restorers/glean/README.md) (CVPR'2021)
+- [LIIF](https://github.com/open-mmlab/mmediting/tree/master/configs/restorers/liif/README.md) (CVPR'2021)
 
 ## Generation
 
-- [CycleGAN](configs/synthesizers/cyclegan/README.md) (ICCV'2017)
-- [pix2pix](configs/synthesizers/pix2pix/README.md) (CVPR'2017)
+- [CycleGAN](https://github.com/open-mmlab/mmediting/tree/master/configs/synthesizers/cyclegan/README.md) (ICCV'2017)
+- [pix2pix](https://github.com/open-mmlab/mmediting/tree/master/configs/synthesizers/pix2pix/README.md) (CVPR'2017)
 
 Methods
 --------------------------------------------
