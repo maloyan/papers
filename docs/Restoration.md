@@ -12,6 +12,7 @@ Photorealistic image generation is taking huge place in computer vision. We saw 
 
 Introduction
 --------------------------------------------
+Some text
 
 Overview
 --------------------------------------------
@@ -19,7 +20,7 @@ Overview
 - [Resolution-robust Large Mask Inpainting with Fourier Convolutions](https://www.youtube.com/watch?v=Lg97gWXsiQ4)
 - [MMediting tool](https://github.com/open-mmlab/mmediting)
 
-## Image-Super-Resolution
+### Image-Super-Resolution
 
 - [SRCNN](https://github.com/open-mmlab/mmediting/tree/master/configs/restorers/srcnn/README.md) (TPAMI'2015)
 - [SRResNet&SRGAN](https://github.com/open-mmlab/mmediting/tree/master/configs/restorers/srresnet_srgan/README.md) (CVPR'2016)
@@ -31,10 +32,17 @@ Overview
 - [GLEAN](https://github.com/open-mmlab/mmediting/tree/master/configs/restorers/glean/README.md) (CVPR'2021)
 - [LIIF](https://github.com/open-mmlab/mmediting/tree/master/configs/restorers/liif/README.md) (CVPR'2021)
 
-## Generation
+### Generation
 
 - [CycleGAN](https://github.com/open-mmlab/mmediting/tree/master/configs/synthesizers/cyclegan/README.md) (ICCV'2017)
 - [pix2pix](https://github.com/open-mmlab/mmediting/tree/master/configs/synthesizers/pix2pix/README.md) (CVPR'2017)
+
+### CVPR 2022
+- [GCFSR: a Generative and Controllable Face Super Resolution Method Without Facial and GAN Priors](https://openaccess.thecvf.com/content/CVPR2022/papers/He_GCFSR_A_Generative_and_Controllable_Face_Super_Resolution_Method_Without_CVPR_2022_paper.pdf)
+- [Restormer: Efficient Transformer for High-Resolution Image Restoration](https://openaccess.thecvf.com/content/CVPR2022/papers/Zamir_Restormer_Efficient_Transformer_for_High-Resolution_Image_Restoration_CVPR_2022_paper.pdf)
+- [Deep Generalized Unfolding Networks for Image Restoration](https://openaccess.thecvf.com/content/CVPR2022/papers/Mou_Deep_Generalized_Unfolding_Networks_for_Image_Restoration_CVPR_2022_paper.pdf)
+- [All-In-One Image Restoration for Unknown Corruption](https://openaccess.thecvf.com/content/CVPR2022/papers/Li_All-in-One_Image_Restoration_for_Unknown_Corruption_CVPR_2022_paper.pdf)
+
 
 Methods
 --------------------------------------------
@@ -48,3 +56,9 @@ Methods
 Datasets
 --------------------------------------------
 - [vqgan 16k reconstruction](https://huggingface.co/datasets/johnowhitaker/vqgan16k_reconstruction)
+
+Metrics & Loss
+--------------------------------------------
+- PSNR
+- SSIM
+- FID
