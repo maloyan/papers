@@ -15,3 +15,18 @@ Introduction
 
 Overview
 --------------------------------------------
+- [Resolution-robust Large Mask Inpainting with Fourier Convolutions](https://www.youtube.com/watch?v=Lg97gWXsiQ4)
+
+
+Methods
+--------------------------------------------
+
+1. Gan inversion - find vector in latent space corresponding to the original image. Then move that vector towards more quality image
+
+![](https://images.deepai.org/converted-papers/1907.10786/x6.png)
+
+2. 
+
+Datasets
+--------------------------------------------
+- [vqgan 16k reconstruction](https://huggingface.co/datasets/johnowhitaker/vqgan16k_reconstruction)
