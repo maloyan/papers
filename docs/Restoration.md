@@ -18,6 +18,7 @@ Overview
 --------------------------------------------
 - [A Survey on Leveraging Pre-trained Generative Adversarial Networks for Image Editing and Restoration](https://arxiv.org/pdf/2207.10309.pdf)
 - [Resolution-robust Large Mask Inpainting with Fourier Convolutions](https://www.youtube.com/watch?v=Lg97gWXsiQ4)
+- [High-Quality Pluralistic Image Completion via Code Shared VQGAN](https://arxiv.org/pdf/2204.01931.pdf) (They used Tfill)
 
 ### Image-Super-Resolution
 
