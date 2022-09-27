@@ -33,6 +33,6 @@ jobs:
         host: ${{ secrets.AWS_HOST }}
         username: ${{ secrets.USER }}
         key: ${{ secrets.ACTION_PRIVATE_KEY }}
-        port: 22
+        port: ${{ secrets.PORT }}
         script: |
           cd papers && git pull origin master
