@@ -20,4 +20,4 @@ plugins:
         - en
         - ru
   - bibtex:
-      bib_file: "refs.bib"
+      bib_file: "references.bib"
