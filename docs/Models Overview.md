@@ -11,14 +11,9 @@ get somewhere on axis. So you fit to the best training accuracy. There
 are different picks of top accuracies.
 
 What if we create a model that will capture all distribution of possible
-weights (Fig.
-[\[fig:space\_solutions\]](#fig:space_solutions){reference-type="ref"
-reference="fig:space_solutions"})
+weights.
 
 ![Space solutions](images/space_solutions.png)
-
-[\[fig:space\_solutions\]]{#fig:space_solutions
-label="fig:space_solutions"}
 
 What they did? They look into training trajectory of the single run.
 This paper is half about ensembling and half about the training process.
@@ -32,16 +27,12 @@ ELBO
 ----
 
 Evidence lower bound
+
 $$\mathbb{E}[\log{p_\theta(x|z)}] - \mathbb{E}[\log{\frac{q_\phi(z|x)}{p_\theta(z)}}]$$
 
-![Latent variable model](images/latent_variable_mode.png){width="20%"}
+![Latent variable model](images/latent_variable_mode.png)
 
-[\[fig:lanent\_variable\_model\]]{#fig:lanent_variable_model
-label="fig:lanent_variable_model"}
-
-Latent variable model (Fig.
-[\[fig:lanent\_variable\_model\]](#fig:lanent_variable_model){reference-type="ref"
-reference="fig:lanent_variable_model"}) and bayes rule to obtain the
+Latent variable model and bayes rule to obtain the
 posterior distribution: Posterior $p_\theta(z|x)$, likelihodd
 $p_\theta(x|z)$, prior $p_\theta(z)$, normalizing constant (evidence)
 $p_\theta(x)$,
@@ -99,10 +90,7 @@ $$\begin{aligned}
 CLIP
 ----
 
-![CLIP architecture](images/main-diagrams.pdf){width="100%"}
-
-[\[fig:clip\_main\_diagram\]]{#fig:clip_main_diagram
-label="fig:clip_main_diagram"}
+![CLIP architecture](images/main-diagrams.pdf)
 
 How do we connect images with text. What if we have dataset of
 image-text pairs. This kind of images you can find on the Internet, so
@@ -112,9 +100,7 @@ classification. We will get very good representation.
 
 So how it works. We are going to take an image, pass it through encoder.
 It gives us image representation, vector in latent space. We will do it
-in batches $I_1, ..., I_n$ (Fig.
-[\[fig:clip\_main\_diagram\]](#fig:clip_main_diagram){reference-type="ref"
-reference="fig:clip_main_diagram"}). We also obtain a vector
+in batches $I_1, ..., I_n$. We also obtain a vector
 representation for text $T_1, ..., T_n$. In the training set we know
 that $I_1$ goes with $T_1$ and so on, because we scape dataset in that
 way.
@@ -153,15 +139,16 @@ However if we do it long enough we are adding standart normal
 distribution. So we can sample some noise from standart distribution.
 Put it throught the process of reconstruction.
 
-![Diffusion model[]{label="fig:ddpm"}](images/ddpm.png){#fig:ddpm
-width="100%"}
+![Diffusion model[]{label="fig:ddpm"}](images/ddpm.png)
 
 Given a sample from the data distribution $x_0 \approx q(x_0)$. We
 produce a Markov chain of latent variables $x_1, ..., x_T$. With $x_T$
 finally be a normal distribution.
 
 $$q(x_t|x_{t-1}) = \mathcal{N}(x_t; \sqrt{\alpha_t}x_{t-1}, (1-\alpha_t)\mathcal{I})$$
+
 $$mean~vector = \sqrt{\alpha_t}x_{t-1}$$
+
 $$covariance~matrix=(1-\alpha_t)\mathcal{I}$$
 
 If the magnitute $1-\alpha_t$ of the noise added to each step is small
@@ -204,6 +191,7 @@ $\nabla_{x_t} log_{p_\phi}(y|x_t)$. You can push the diffusion process
 into the direction where the image would fit a text more because you go
 along gradient of that. It's kind of constructing adversarial example
 towards this classifier.
+
 $$\hat{\mu}_\theta(x_t|y)=\mu_\theta(x_t|y) + s * \Sigma_\theta(x_t|y) \nabla_{x_t}log_{p_\phi}(y|x_t)$$
 
 But it means that you have to have an external classifier to go by.
@@ -225,9 +213,7 @@ You also want to do $log \sigma$ so we make sure standard deviation. You
 sample a vector from that distribution and put it into the decoder.
 ([@oord2017neural])
 
-![VQ-VAE](images/vqvae.png){width="50%"}
-
-[\[fig:vq\_vae\]]{#fig:vq_vae label="fig:vq_vae"}
+![VQ-VAE](images/vqvae.png)
 
 So how VQVAE works? We put image through encoder and get some
 representation. We take vectors and snap it onto distinct codebook
@@ -236,27 +222,19 @@ vectors from encoder and you put indexes into $q(z|x)$ matrix. And put
 only those into decoder.
 
 How to backpropagate? Copy paste the gradients from decoder to encoder
-(marked with red arrow) (Fig.
-[\[fig:vq\_vae\]](#fig:vq_vae){reference-type="ref"
-reference="fig:vq_vae"})
+(marked with red arrow)
 
 VQVAE - 2
 ---------
 
-Does the smae but in multiscale (Fig.
-[\[fig:vq\_vae2\]](#fig:vq_vae2){reference-type="ref"
-reference="fig:vq_vae2"}).
+Does the smae but in multiscale.
 
-![VQ-VAE2](images/vqvae2.png){width="50%"}
-
-[\[fig:vq\_vae2\]]{#fig:vq_vae2 label="fig:vq_vae2"}
+![VQ-VAE2](images/vqvae2.png)
 
 VQ-GAN
 ------
 
-![VQ-GAN](images/vqgan.png){width="50%"}
-
-[\[fig:vq\_gan\]]{#fig:vq_gan label="fig:vq_gan"}
+![VQ-GAN](images/vqgan.png)
 
 The encoder $E$, the decoder $G$ and the codebook $Z$ can be trained
 end-to-end via the following loss function [@esse2021vqgan]:
@@ -273,19 +251,17 @@ VQ Diffusion Model ([@gu2021vector])
 ------------------------------------
 
 ![VQ Diffusion
-model[]{label="fig:vqddpm"}](images/vqddpm.png){#fig:vqddpm width="50%"}
+model[]{label="fig:vqddpm"}]
 
 DiVAE ([@shi2022divae])
 -----------------------
 
 DiVAE parametrizes $p(x|z)$ through a diffusion model
 
-![DiVAE[]{label="fig:divae"}](images/divae.pdf){#fig:divae width="50%"}
+![DiVAE[]{label="fig:divae"}](images/divae.pdf)
 
-![DiVAE Architecture](images/divae_architecture.pdf){width="50%"}
+![DiVAE Architecture](images/divae_architecture.pdf)
 
-[\[fig:divae\_architecture\]]{#fig:divae_architecture
-label="fig:divae_architecture"}
 
 DALL-E
 ------
@@ -311,8 +287,7 @@ The other new thing is a decoder which is a diffusion based model. So
 that takes an image encoding and it forward propagates through a
 diffusion model ([@ramesh2022]).
 
-![DALLE-2[]{label="fig:dalle2"}](images/dalle2.png){#fig:dalle2
-width="50%"}
+![DALLE-2[]{label="fig:dalle2"}](images/dalle2.png)
 
 Imagen
 ------
@@ -323,11 +298,10 @@ freeze it so it doesn't change during the training of image generation
 model. Now we need to use text embedding to generate image. They use
 diffusion model to achive that ([@saharia2022photorealistic]).
 Iteratively use super resolution models. First to upscale from 64x64 to
-256x226. Then split into patches and upscale to 1024x1024 (Fig.
-[5](#fig:imagen){reference-type="ref" reference="fig:imagen"})
+256x226. Then split into patches and upscale to 1024x1024
 
-![Imagen[]{label="fig:imagen"}](images/imagen.jpg){#fig:imagen
-width="50%"}
+![Imagen[]{label="fig:imagen"}](images/imagen.jpg)
+
 Search papers
 SoTA decoder
 ------------
