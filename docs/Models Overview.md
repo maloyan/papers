@@ -90,7 +90,7 @@ $$\begin{aligned}
 CLIP
 ----
 
-![CLIP architecture](images/main-diagrams.pdf)
+![CLIP architecture](images/main-diagrams.png)
 
 How do we connect images with text. What if we have dataset of
 image-text pairs. This kind of images you can find on the Internet, so
@@ -258,9 +258,9 @@ DiVAE ([@shi2022divae])
 
 DiVAE parametrizes $p(x|z)$ through a diffusion model
 
-![DiVAE[]{label="fig:divae"}](images/divae.pdf)
+![DiVAE[]{label="fig:divae"}](images/divae.png)
 
-![DiVAE Architecture](images/divae_architecture.pdf)
+![DiVAE Architecture](images/divae_architecture.png)
 
 
 DALL-E
