@@ -6,6 +6,7 @@ RUN pip install --no-cache-dir \
   mkdocs-git-revision-date-localized-plugin \
   mkdocs-bibtex \
   mkdocs-img2fig-plugin \
-  mkdocs-mermaid2-plugin
+  mkdocs-mermaid2-plugin \
+  mkdocs-glightbox
 
 ENTRYPOINT ["mkdocs", "serve", "--dev-addr=0.0.0.0:8000"]

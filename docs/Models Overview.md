@@ -15,7 +15,7 @@ weights (Fig.
 [\[fig:space\_solutions\]](#fig:space_solutions){reference-type="ref"
 reference="fig:space_solutions"})
 
-![Space solutions](images/space_solutions.png){width="30%"}
+![Space solutions](images/space_solutions.png)
 
 [\[fig:space\_solutions\]]{#fig:space_solutions
 label="fig:space_solutions"}

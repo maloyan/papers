@@ -21,3 +21,4 @@ plugins:
         - ru
   - bibtex:
       bib_file: "references.bib"
+  - glightbox
