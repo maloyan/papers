@@ -4,5 +4,5 @@ services:
     volumes:
       - .:/docs
     ports:
-      - '4101:8000'
+      - '4102:8000'
     restart: unless-stopped
