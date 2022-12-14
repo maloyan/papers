@@ -250,15 +250,14 @@ Where, $sg[\cdot ]$ stands for the stop-gradient operation.
 VQ Diffusion Model ([@gu2021vector])
 ------------------------------------
 
-![VQ Diffusion
-model[]{label="fig:vqddpm"}]
+![VQ Diffusion model](images/vqddpm.png)
 
 DiVAE ([@shi2022divae])
 -----------------------
 
 DiVAE parametrizes $p(x|z)$ through a diffusion model
 
-![DiVAE[]{label="fig:divae"}](images/divae.png)
+![DiVAE](images/divae.png)
 
 ![DiVAE Architecture](images/divae_architecture.png)
 
@@ -301,6 +300,15 @@ Iteratively use super resolution models. First to upscale from 64x64 to
 256x226. Then split into patches and upscale to 1024x1024
 
 ![Imagen[]{label="fig:imagen"}](images/imagen.jpg)
+
+Stable diffusion models
+-----------------------
+
+Stable diffusion models are a class of generative models that are
+designed to be stable and easy to train. They are based on the idea of
+diffusion processes. The main idea is to use a diffusion process to
+generate images. The diffusion process is a stochastic process that
+starts from a latent vector and evolves over time. 
 
 Search papers
 SoTA decoder
