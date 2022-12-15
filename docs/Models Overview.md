@@ -299,16 +299,18 @@ diffusion model to achive that ([@saharia2022photorealistic]).
 Iteratively use super resolution models. First to upscale from 64x64 to
 256x226. Then split into patches and upscale to 1024x1024
 
-![Imagen[]{label="fig:imagen"}](images/imagen.jpg)
+![Imagen](images/imagen.jpg)
 
-Stable diffusion models
------------------------
+Diffusers
+---------
 
-Stable diffusion models are a class of generative models that are
-designed to be stable and easy to train. They are based on the idea of
-diffusion processes. The main idea is to use a diffusion process to
-generate images. The diffusion process is a stochastic process that
-starts from a latent vector and evolves over time. 
+Diffusers method takes as an input few images and corresponding text
+descriptions. Then it returns a fine-tuned/“personalized” text-to-image 
+model that encodes a unique identifier that refers to the subject. 
+Then, at inference, we can implant the unique identifier in different 
+sentences to synthesize the subjects in difference contexts
+
+![Diffusers](images/system_fig.png)
 
 Search papers
 SoTA decoder
