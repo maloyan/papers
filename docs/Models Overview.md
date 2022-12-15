@@ -312,7 +312,7 @@ sentences to synthesize the subjects in difference contexts
 
 ![Diffusers](images/system_fig.png)
 
-Diffusers paper proposes a loss function that is a combination of
+Diffusers ([@https://doi.org/10.48550/arxiv.2208.12242]) paper proposes a loss function that is a combination of
 perceptual loss and a prior-preservation loss. The prior-preservation
 loss is a new loss that is designed to preserve the prior distribution
 of the model. This loss is used to ensure that the model does not
