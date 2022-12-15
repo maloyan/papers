@@ -337,10 +337,3 @@ $$L_{diffusers} = \mathbb{E}_{x,c,\epsilon,\epsilon',t} \left[ w_{t} || \hat{x}_
 Where $\lambda$ controls for the relative weight of the prior-preservation term. 
 $x$ is the ground-truth image, $c$ is a conditioning vector (e.g., obtained from a text prompt), $\epsilon ~ \mathcal{N}(0, 1)$ is a noise vector, $\alpha_t$, $\sigma_t$ $w_t$ are
 terms that control the noise schedule and sample quality, and are functions of the diffusion process time $t \sim U([0, 1])$.
-
-Search papers
-SoTA decoder
-------------
-
-Model to generate image embeddings from text
---------------------------------------------
