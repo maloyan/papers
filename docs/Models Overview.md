@@ -312,6 +312,32 @@ sentences to synthesize the subjects in difference contexts
 
 ![Diffusers](images/system_fig.png)
 
+Diffusers paper proposes a loss function that is a combination of
+perceptual loss and a prior-preservation loss. The prior-preservation
+loss is a new loss that is designed to preserve the prior distribution
+of the model. This loss is used to ensure that the model does not
+forget the prior distribution during fine-tuning. It uses its own
+generated samples to supervise the model. 
+
+
+A conditional diffusion model $\hat{x}_\theta$ is trained using a squared error loss
+to denoise a variably-noised image $z_t := \alpha_t x + \sigma_t\epsilon$ where $α_t$ and
+$σ_t$ are the mixing and noise coefficients, respectively.
+
+Specifically, the methos generates data $x_{pr}$ by using the ancestral
+sampler on the frozen pre-trained diffusion model with random initial
+noise $z_{t_1} \sim N(0, I)$ and conditioning vector $c_{pr} := \Gamma(f("a
+[class noun]"))$, so it's $x_{pr} = {\hat{x}}(z_{t_1}, c_{pr})$.
+
+
+The loss becomes:
+
+$$L_{diffusers} = \mathbb{E}_{x,c,\epsilon,\epsilon',t} \left[ w_{t} || \hat{x}_\theta(\alpha_t x + \sigma_t\epsilon, c) - x ||_2^2 + \lambda w_{t'} || \hat{x}_\theta(\alpha_{t'} x_{pr} + \sigma_{t'}\epsilon') - x_{pr} ||_2^2\right]$$
+
+Where $\lambda$ controls for the relative weight of the prior-preservation term. 
+$x$ is the ground-truth image, $c$ is a conditioning vector (e.g., obtained from a text prompt), $\epsilon ~ \mathcal{N}(0, 1)$ is a noise vector, $\alpha_t$, $\sigma_t$ $w_t$ are
+terms that control the noise schedule and sample quality, and are functions of the diffusion process time $t \sim U([0, 1])$.
+
 Search papers
 SoTA decoder
 ------------
