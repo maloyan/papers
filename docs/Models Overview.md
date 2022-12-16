@@ -301,6 +301,12 @@ Iteratively use super resolution models. First to upscale from 64x64 to
 
 ![Imagen](images/imagen.jpg)
 
+Stable Diffusion
+----------------
+![Stable Diffusion](images/stable_diffusion.png)
+
+![Loss](images/sd_loss.png)
+
 Diffusers
 ---------
 
